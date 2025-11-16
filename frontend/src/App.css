@@ -1,0 +1,21 @@
+.app {
+  min-height: 100vh;
+  background: #FAFAF8;
+}
+
+.app-content {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.loading,
+.error {
+  padding: 24px;
+  font-size: 14px;
+  color: #111;
+}
+
+.error {
+  color: #d32f2f;
+}

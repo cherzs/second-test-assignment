@@ -1,0 +1,187 @@
+.new-operation-form {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #E5E5E5;
+}
+
+.new-operation-form form {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+  position: relative;
+  z-index: 1;
+}
+
+.new-operation-form input {
+  padding: 10px 12px;
+  border: 1px solid #CCC;
+  background: #FAFAF8;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  color: #111;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+}
+
+.new-operation-form input::-webkit-outer-spin-button,
+.new-operation-form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.dropdown-wrapper {
+  position: relative !important;
+  max-width: 120px;
+  z-index: 10000 !important;
+  isolation: isolate !important;
+}
+
+/* Dropdown Trigger Button - Clean White Minimalist */
+.dropdown-trigger {
+  width: 100% !important;
+  padding: 0 10px !important;
+  height: 36px !important;
+  min-height: 36px !important;
+  border: 1px solid #e5e5e5 !important;
+  background: #ffffff !important;
+  color: #111 !important;
+  font-size: 14px !important;
+  font-family: 'Inter', sans-serif !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  border-radius: 6px !important;
+  transition: border-color 0.2s !important;
+  box-shadow: none !important;
+  pointer-events: auto !important;
+  position: relative !important;
+  z-index: 10001 !important;
+  -webkit-user-select: none !important;
+  user-select: none !important;
+  touch-action: manipulation !important;
+}
+
+.dropdown-trigger:hover:not(:disabled) {
+  border-color: #111 !important;
+  background: #ffffff !important;
+}
+
+.dropdown-trigger:disabled {
+  opacity: 0.6 !important;
+  cursor: not-allowed !important;
+}
+
+.dropdown-value {
+  flex: 1 !important;
+  text-align: left !important;
+  color: #111 !important;
+}
+
+.dropdown-arrow {
+  font-size: 10px !important;
+  color: #666 !important;
+  line-height: 1 !important;
+  margin-left: 8px !important;
+  font-weight: 300 !important;
+}
+
+/* Dropdown Panel Container - Clean White Minimalist */
+.dropdown-panel {
+  background: #ffffff !important;
+  border: 1px solid #e5e5e5 !important;
+  border-radius: 6px !important;
+  padding: 4px 0 !important;
+  position: absolute !important;
+  top: calc(100% + 6px) !important;
+  left: 0 !important;
+  width: 100% !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06) !important;
+  z-index: 9999 !important;
+  overflow: visible !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  display: block !important;
+  pointer-events: auto !important;
+  margin: 0 !important;
+}
+
+/* Dropdown Option Items - Clean White Minimalist */
+.dropdown-option {
+  width: 100% !important;
+  height: 36px !important;
+  padding: 0 12px !important;
+  background: #ffffff !important;
+  color: #111 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  text-align: left !important;
+  font-size: 15px !important;
+  font-family: 'Inter', sans-serif !important;
+  cursor: pointer !important;
+  transition: background 0.15s ease !important;
+  display: flex !important;
+  align-items: center !important;
+  box-shadow: none !important;
+}
+
+.dropdown-option:hover {
+  background: #f7f7f7 !important;
+  color: #111 !important;
+}
+
+.dropdown-option.selected {
+  background: #efefef !important;
+  color: #111 !important;
+  font-weight: 500 !important;
+}
+
+.new-operation-form input {
+  max-width: 120px;
+}
+
+.new-operation-form input:focus {
+  outline: none;
+  border-color: #111;
+}
+
+.new-operation-form input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.new-operation-form button[type="submit"] {
+  background: #111;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.new-operation-form button[type="submit"]:hover:not(:disabled) {
+  background: #333;
+}
+
+.new-operation-form button[type="submit"]:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.loading-indicator {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #999;
+}
+
+.error-message {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #d32f2f;
+}

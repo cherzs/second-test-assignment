@@ -1,0 +1,10 @@
+.calc-tree {
+  width: 100%;
+}
+
+.empty-state {
+  padding: 48px 0;
+  text-align: center;
+  color: #999;
+  font-size: 14px;
+}
