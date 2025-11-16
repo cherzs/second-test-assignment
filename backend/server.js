@@ -9,7 +9,20 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 4000;
 
-app.use(cors());
+// CORS configuration - allow Vercel and localhost
+app.use(cors({
+  origin: [
+    'http://localhost:5173',
+    'http://localhost:80',
+    'http://localhost:3000',
+    process.env.FRONTEND_URL,
+    /\.vercel\.app$/, // Allow all Vercel domains
+    /\.vercel\.app\/.*$/ // Allow all Vercel subdomains
+  ].filter(Boolean), // Remove undefined values
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
 app.use(express.json());
 
 app.use('/api/auth', authRoutes);
